@@ -3,13 +3,13 @@ process.env.TEST_DATABASE = './test/test.sqlite';
 
 const expect = require('chai').expect;
 const request = require('supertest');
-const sqlite3 = require('better-sqlite3');
+const sqlite3 = require('sqlite3');
 
 const app = require('../server.js');
 const seed = require('./seed.js');
 
-const prodDb = new sqlite3('./database.sqlite');
-let testDb = new sqlite3(process.env.TEST_DATABASE);
+const prodDb = new sqlite3.Database('./database.sqlite');
+let testDb = new sqlite3.Database(process.env.TEST_DATABASE);
 
 describe('Artist Table', function() {
   it('should exist', function(done) {
