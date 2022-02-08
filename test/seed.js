@@ -1,5 +1,5 @@
-const sqlite3 = require('sqlite3');
-const db = new sqlite3.Database('./test/test.sqlite');
+const sqlite3 = require('better-sqlite3');
+const db = new sqlite3('./test/test.sqlite');
 
 function seedArtistDatabase(done) {
   db.serialize(function() {
