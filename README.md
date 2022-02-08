@@ -2,28 +2,13 @@
 
 ## Project Overview
 
-In this capstone project, you will build all of the routing and database logic for an internal tool for a comic book publishing company called X-Press Publishing.
+This is a Capstone project of the "Create a Back-End app skill path" of Codecademy.
+It is an internal tool for a comic book publishing company called X-Press Publishing.
 
 The X-Press Publishing internal tool should allow users to:
 - Create, view, and update artists
 - Create, view, update, and delete comic book series
 - Create, view, update, and delete issues of a specific comic book series
-
-## Implementation Details
-
-To complete this project, you will need to create the database tables and API routes specified below. In addition to these specs, we have provided high-level steps for additional guidance in tying together all of your new skills in this project, linked at the end of this article. Feel free to not use these steps if you'd like an extra challenge. As you work through the project, be sure to use `npm` to install the necessary packages such as `express`.
-
-To test this functionality you can run the testing suite and interact with the API via the provided front-end. If you want more data to interact with in the front-end, you can run the **seed.js** file to add data to your database.
-
-We've provided an empty **migration.js** file for you to write table creation logic in.
-
-In order for the tests and provided front-end to run properly, you will need to make sure to:
-- Create and export your Express app from a root-level file called **server.js**
-- Accept and set an optional port argument for your server to listen on from `process.env.PORT`
-- If `process.env.PORT` is not set, server should run on port `4000` (this is where the provided front-end will make requests to)
-- Accept and set an optional database file argument from `process.env.TEST_DATABASE` in all Express route files that open and modify your database
-- Use the root-level **database.sqlite** as your API's database
-- **Note:** When loading **database.sqlite** in your JavaScript files, sqlite3 will always try to load **database.sqlite** from the root directory path, `./database.sqlite`, regardless of where the current file is located. Therefore your code will always be `new sqlite3.Database(process.env.TEST_DATABASE || './database.sqlite')` regardless of the file you are writing in 
 
 ### Database Table Properties
 
