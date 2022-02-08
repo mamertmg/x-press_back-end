@@ -12,8 +12,8 @@ class App extends Component {
         <div className="App">
           <header>
             <Link to="/" className="logo">
-              <img src='img/logo.svg' alt="logo" className="desktop" />
-              <img src='img/logo-mobile.svg' alt="logo" className="mobile" />
+              <img src='./img/logo.svg' alt="logo" className="desktop" />
+              <img src='./img/logo-mobile.svg' alt="logo" className="mobile" />
             </Link>
           </header>
           <Route exact path="/" component={Landing} />
