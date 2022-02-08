@@ -1,5 +1,5 @@
-const sqlite3 = require('better-sqlite3');
-const db = new sqlite3('./database.sqlite');
+const sqlite3 = require('sqlite3');
+const db = new sqlite3.Database('./database.sqlite');
 
 
 //CREATE TABLE node migration.js
